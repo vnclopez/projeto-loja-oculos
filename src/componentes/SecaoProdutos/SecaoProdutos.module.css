@@ -1,0 +1,86 @@
+.container_produtos {
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.produtos_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.produtos_intro h3 {
+    font-size: 35px;
+}
+
+.container_oculos {
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 400px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+    box-shadow: 2px 2px 20px -4px #000;
+    background-color: #f6f6f6;
+}
+
+.card h4 {
+    font-size: 30px;
+}
+
+.card p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imagem {
+    height: 50%;
+    width: auto;
+}
+
+.produtos_vantagens h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.produtos_vantagens ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* --------------MEDIA-QUERIES----------------- */
+@media (max-width: 768px) {
+    .container_produtos {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container_produtos {
+        align-items: normal;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
